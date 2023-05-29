@@ -22,7 +22,7 @@ const storeTaskInLocalStorage = (task) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 };
 
-const removeTaskFromLocalStorage = (deletedTask, itemIndex) => {
+const removeTaskFromLocalStorage = (itemIndex) => {
   const tasks = getTasksFromLocalStorage();
   tasks.splice(itemIndex, 1);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
@@ -30,7 +30,7 @@ const removeTaskFromLocalStorage = (deletedTask, itemIndex) => {
 
 let editTaskInLocalStorage = (editedTask, itemIndex) => {
   const tasks = getTasksFromLocalStorage();
-  tasks.splice(itemIndex, 1);
+  tasks[itemIndex] = editedTask;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 };
 
