@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    background-size: 100%;
+    background-image: repeating-linear-gradient(to right, #40B5AD, #a4cfe3);
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+  }
+  
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 3em;
+  color: white;
+  text-shadow: rgb(6, 10, 56) 10px 5px 10px;
+}
+h2 {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 3em;
+  font-weight: 300;
+  color: rgb(6, 10, 56)
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.custom-input {
+  width: 100%;
+  height: 50px;
+  color: rgb(6, 10, 56);
+  font-size: 1.5em;
+}
+
+.custom-button {
+  width: 100%;
+  margin: 15px auto 0 5px;
+  height: 50px;
+  border: rgb(6, 10, 56) solid 5px;
+  border-radius: 15px;
+  color: rgb(6, 10, 56);
+  font-size: 1.5em;
+  background-color: transparent;
+}
+
+.collection-item {
+  font-size: 2em;
+}
+.fa {
+  margin-left: 10px;
+}
