@@ -108,7 +108,7 @@ const removeTask = (event) => {
       let indexOfDeletedLI = listLi.findIndex((li) => li === deletedLi);
       deletedLi.remove();
 
-      removeTaskFromLocalStorage(deletedLi.textContent, indexOfDeletedLI);
+      removeTaskFromLocalStorage(indexOfDeletedLI);
     }
   }
 };
